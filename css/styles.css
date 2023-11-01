@@ -45,3 +45,7 @@ body {
 .gallery__link:hover {
   cursor: zoom-in;
 }
+
+.hidden {
+  display: none;
+}
