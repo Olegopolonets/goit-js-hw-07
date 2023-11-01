@@ -1,1 +1,4 @@
-console.log(2);
+import { galleryItems } from './gallery-items.js';
+// Change code below this line
+
+console.log(galleryItems);
