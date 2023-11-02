@@ -29,10 +29,8 @@ galleryList.addEventListener("click", (event) => {
       )
       .show();
     baseLBox = document.querySelector(".basicLightbox");
-    console.log(baseLBox);
   }
   document.addEventListener("keydown", (event) => {
-    console.log(baseLBox);
     if (event.key === "Escape") {
       baseLBox.classList.remove("basicLightbox");
     }
