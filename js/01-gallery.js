@@ -31,13 +31,16 @@ galleryList.addEventListener("click", (event) => {
     baseLBox = document.querySelector(".basicLightbox");
   }
   document.addEventListener("keydown", (event) => {
+    if (target.tagName !== "IMG") {
+      return;
+    }
     if (event.key === "Escape") {
       baseLBox.classList.remove("basicLightbox");
     }
   });
 });
 
-/* 
+/*
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 const container = document.querySelector('.gallery');
@@ -87,4 +90,4 @@ const instance = basicLightbox.create(
     if (e.code !== 'Escape') return;
     instance.close();
   }
-*/
+/*/
